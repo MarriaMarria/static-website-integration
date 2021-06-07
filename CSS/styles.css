@@ -224,7 +224,7 @@ footer {
     }
 }
 
-/*________________________________MODAL_______________________________________*/
+/*______________MODAL desktop version________________________________*/
 
 .modal-bg {
     position: fixed;
@@ -240,11 +240,10 @@ footer {
 
 .modal {
     background-color: #232323;
-    width: 30%;
-    height: 80%;
-    border: 1px solid #232323;
+    width: 40%;
+    height: 75%;
     border-radius: 8px;
-    margin: 0 auto;
+    font-size: 12px;
 }
 
 .form-input {
@@ -252,36 +251,93 @@ footer {
     margin-top: 30px;
 }
 .user-details {
-    width: 100%;
     color: white;
+    width: 100%;
 }
+
 .details {
     display: block;
-    width: 100%;
     text-align: left;
-    margin: 15px 0 10px 35px;
-    font-size: 12px;
+    margin: 15px 0 15px 50px;
     
 }
 
 .input-text {
     width: 80%;
+    height: 40px;
+    border-radius: 8px;
 }
 
 .radio-box {
     width: auto;
-    margin: 25px;
-    font-size: 12px;
+    margin: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: 
 
 }
 
 .radio-btn {
     margin: 2px;
+    padding: 5px;
 }
 
-.radio-label {
-    /* white-space: nowrap; */
+.checkbox-box {
+    margin: 35px;
+}
+
+.submit-box {
+    border-radius: 8px;
+    background-color: #fe142f;
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    margin: 0 auto;
+
+}
+
+/* ___________________MODAL Tablet version ______________________*/
+
+@media (max-width: 768px) {
+    .modal {
+        width: 65%;
+        height: 75%;
+        font-size: 14px;
+    }
+    
+    .submit-box {
+        margin-top: -10px;
+    }
+
+
+}
+
+/*___________________________ Modal Mobil ______________________*/
+
+@media (max-width: 420px) {
+    .modal {
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+    }
+    
+    .input-text {
+        height: 25px; 
+    }
+
+    .details {
+        margin: 8px 0 8px 35px;
+    }
+
+    .radio-box {
+        margin: 10px 30px 10px 20px;
+    }
+    .checkbox-box {
+        margin: 0 35px 0 28px;
+    }
+    .submit-box {
+        margin-top: 10px;
+        width: 130px;
+        height: 30px;
+    }
 }
