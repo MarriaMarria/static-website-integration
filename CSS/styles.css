@@ -254,6 +254,19 @@ footer {
     border-radius: 8px;
     font-size: 12px;
     position: relative;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.myH2 {
+    color: white;
+    font-size: 36px;
+    padding: 50px;
+    line-height: 50px;
+    margin-top: 200px;
 }
 
 .modal-close {
@@ -315,7 +328,10 @@ footer {
 
 }
 
+.close {
 
+    
+}
 
 /* ___________________MODAL Tablet version ______________________*/
 
@@ -362,3 +378,4 @@ footer {
         height: 30px;
     }
 }
+

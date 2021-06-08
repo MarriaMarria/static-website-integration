@@ -40,8 +40,7 @@
                 <p>Do you live to game? Our next gaming event is now accepting reservations for players, but spots are limited.</p>
                 <img src="media/AdobeStock_335161323 (1) 1.jpg" class="img-main" alt="gamer girl">
                 <div class="btn-center">
-                    <button class="sign-up-btn">Sign Up Now</button>
-                    
+                    <button class="sign-up-btn">Sign Up Now</button>  
                 </div>
             </div>
         </section>
@@ -51,77 +50,80 @@
 
         <div class="modal-bg"> <!-- To add some opacity to the background -->
             <div class="modal">
-
-                <form class="my-form">
-
-                    <div class="user-details">
+                <h2 class="myH2 hidden">Thank you for submitting your registration details</h2>
+                <div class="user-details">
+                    
+                    <div class="form-input">
+                        <label class="details" for="FirstName">First name</label>
+                        <input class="input-text" type="text" placeholder="" id="FirstName">
+            
+                        <label class="details">Last name</label>
+                        <input class="input-text" type="text" placeholder="" id="LastName">
+        
+                        <label class="details">Email</label>
+                        <input class="input-text" type="text" placeholder="" id="Email">
+        
+                        <label class="details">Birthdate</label>
+                        <input class="input-text" type="date" placeholder="" id="Birthdate">
+        
+                        <label class="details">How many tournaments have you attended?</label>
+                        <input class="input-text" type="number" placeholder="" id="Tournaments">
+                        <label class="details">Which location?</label>
+                    </div>
                         
-                        <div class="form-input">
-                            <label class="details" for="FirstName">First name</label>
-                            <input class="input-text" type="text" placeholder="" id="FirstName">
-                
-                            <label class="details">Last name</label>
-                            <input class="input-text" type="text" placeholder="" id="LastName">
-            
-                            <label class="details">Email</label>
-                            <input class="input-text" type="text" placeholder="" id="Email">
-            
-                            <label class="details">Birthdate</label>
-                            <input class="input-text" type="date" placeholder="" id="Birthdate">
-            
-                            <label class="details">How many tournaments have you attended?</label>
-                            <input class="input-text" type="number" placeholder="" id="Tournaments">
-                            <label class="details">Which location?</label>
-                        </div>
-                            
 
-                        <div class="radio-box">
-                            
-                            <div class="radio-btn">
-                                <input type="radio" id="New York" value="New York" name="button" checked>
-                                <label class="radio-label"for="New York">New York</label>
-                            </div>
-                            <div class="radio-btn">
-                                <input type="radio" id="San Francisco" value="San Francisco" name="button">
-                                <label class="radio-label" for="San Francisco">San Francisco</label>
-                            </div>
-                            <div class="radio-btn">
-                                <input type="radio" id="Seattle" value="Seattle" name="button">
-                                <label class="radio-label" for="Seattle">Seattle</label>
-                            </div>
-                            <div class="radio-btn">
-                                <input type="radio" id="Chicago" value="Chicago" name="button">
-                                <label class="radio-label" for="Chicago">Chicago</label>
-                            </div>
-                            <div class="radio-btn">
-                                <input type="radio" id="Boston" value="Boston" name="button">
-                                <label class="radio-label" for="Boston">Boston</label>
-                            </div>
-                            <div class="radio-btn">
-                                <input type="radio" id="Portland" value="Portland" name="button">
-                                <label class="radio-label" for="Portland">Portland</label>
-                            </div>
-                        </div>
+                    <div class="radio-box">
                         
-                        <div class="checkbox-box">
-                            <div>
-                                <input type="checkbox" id="Terms" name="termsconditions" checked>
-                                <label for="Terms">I accept terms and conditions.</label>
-                                <span id="errorMessageTerms"></span>
-                            </div>
-                            
-                            <div>
-                                <input type="checkbox" id="lorem2" name="lorem">
-                                <label for="lorem2">I would like to receiver GameOn newsletter.</label>
-                            </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="New York" value="New York" name="button" checked>
+                            <label class="radio-label"for="New York">New York</label>
                         </div>
-
-                        <div class="btn-center">
-                            <input class="submit-box" type="submit" value="Go">
-                            <span class="modal-close">X</span>
+                        <div class="radio-btn">
+                            <input type="radio" id="San Francisco" value="San Francisco" name="button">
+                            <label class="radio-label" for="San Francisco">San Francisco</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="Seattle" value="Seattle" name="button">
+                            <label class="radio-label" for="Seattle">Seattle</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="Chicago" value="Chicago" name="button">
+                            <label class="radio-label" for="Chicago">Chicago</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="Boston" value="Boston" name="button">
+                            <label class="radio-label" for="Boston">Boston</label>
+                        </div>
+                        <div class="radio-btn">
+                            <input type="radio" id="Portland" value="Portland" name="button">
+                            <label class="radio-label" for="Portland">Portland</label>
                         </div>
                     </div>
-                </form>
+                    
+                    <div class="checkbox-box">
+                        <div>
+                            <input type="checkbox" id="Terms" name="termsconditions" checked>
+                            <label for="Terms">I accept terms and conditions.</label>
+                            <span id="errorMessageTerms"></span>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">I would like to receiver GameOn newsletter.</label>
+                        </div>
+                    </div>
+
+                    <div class="btn-center">
+                        <input class="submit-box" type="submit" value="Go">
+                        <span class="modal-close">X</span>
+                    </div>
+
+                    <div class="btn-center hidden">
+                        <button class="close">Sign Up Now</button>
+                        
+                    </div>
+                </div>
+        
 
             </div>
         </div>
